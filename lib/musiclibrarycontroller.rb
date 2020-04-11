@@ -83,7 +83,11 @@ class MusicLibraryController
       user_input = gets.chomp 
       
       if user_input > 0 && user_input =< Song.all.length 
-         song = Song.all.sort { |song| song.name} [user_input-1]
+        
+         song_sorted = Song.all.sort { |song| song.name} 
+         song = song_sorted[user_input - 1]
+         puts "#{song.name}"
+       end 
     end 
   
   
