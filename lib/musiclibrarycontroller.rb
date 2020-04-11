@@ -21,7 +21,8 @@ class MusicLibraryController
     puts "What would you like to do?"
     if user_input != "exit"
       call 
-    else 
+    elsif user_input == "list_songs"
+      list_songs
     end 
   end 
     
