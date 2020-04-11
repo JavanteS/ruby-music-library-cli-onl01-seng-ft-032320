@@ -61,7 +61,7 @@ class MusicLibraryController
       
       if singer = Artist.find_by_name(input)
         
-        sosinger_sorted = singer.songs.sort_by do |artist| artist.name 
+        sosinger_sorted = singer.songs.sort_by do |song| song.name 
       end 
       sosinger_sorted.each_with_index(1) do |artist,index|
         puts "#{i}"
