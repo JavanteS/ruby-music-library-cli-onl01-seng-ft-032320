@@ -65,7 +65,8 @@ class MusicLibraryController
       end 
       sosinger_sorted.each_with_index(1) do |artist,index|
         puts "#{i}"
-      end 
+      end
+    end
     end 
     
     def play_song
