@@ -64,7 +64,7 @@ class MusicLibraryController
         sosinger_sorted = singer.songs.sort_by do |song| song.name 
       end 
       sosinger_sorted.each.with_index(1) do |artist,index|
-        puts "#{i}"
+        puts "#{index}"
       end
     end
     end 
