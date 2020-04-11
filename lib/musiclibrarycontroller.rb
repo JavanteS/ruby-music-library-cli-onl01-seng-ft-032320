@@ -83,7 +83,7 @@ class MusicLibraryController
       user_input = gets.chomp 
       
       if user_input > 0 && user_input =< Song.all.length 
-         song = Song.all.sort { |song.name|
+         song = Song.all.sort { |song| song.name} []
     end 
   
   
