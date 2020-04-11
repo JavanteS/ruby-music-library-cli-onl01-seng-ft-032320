@@ -59,6 +59,11 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
       user_input = gets.chomp
       
+      if singer = Artist.find_by_name(input)
+        
+        sosinger_sorted = singer.songs.sort_by do |artist| artist.name 
+      end 
+      sosinger_sorted.each_with_index 
     end 
     
     def play_song
