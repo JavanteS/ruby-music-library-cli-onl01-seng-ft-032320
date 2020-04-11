@@ -85,7 +85,7 @@ class MusicLibraryController
      
       if (1..Song.all.length).include?(user_input)
          song_list = Song.all.sort_by { |song| song.name}
-         song = list_songs[user_input - 1]
+         song = song_list[user_input - 1]
          puts "#{song.name}"
          #play_song
        end 
